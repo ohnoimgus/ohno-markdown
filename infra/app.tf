@@ -10,7 +10,7 @@ resource "digitalocean_app" "markdown-server" {
       instance_count     = 1
       instance_size_slug = "basic-xxs" 
 
-      # run_command   = "uvicorn main:app" # TODO gunicorn example:app -w 4 -k uvicorn.workers.UvicornWorker
+      run_command   = "gunicorn --worker-tmp-dir /dev/shm main:app -w 4 -k uvicorn.workers.UvicornWorker"
       # build_command = "pip install requirements.txt" # TODO
 
       github {

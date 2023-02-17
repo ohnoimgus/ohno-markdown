@@ -1,5 +1,6 @@
 __pycache__
 .python-version
+TODO.md
 
 # Local .terraform directories
 **/.terraform/*

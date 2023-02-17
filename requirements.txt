@@ -3,3 +3,4 @@ fastapi
 aiofiles
 aiocache
 uvicorn[standard]
+gunicorn
