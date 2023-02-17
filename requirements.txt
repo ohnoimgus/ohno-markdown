@@ -1,0 +1,5 @@
+markdown
+fastapi
+aiofiles
+aiocache
+uvicorn[standard]
