@@ -16,7 +16,7 @@ resource "digitalocean_app" "markdown-server" {
       github {
         repo           = "ohnoimgus/ohno-markdown" # TODO
         branch         = "main"
-        deploy_on_push = true
+        deploy_on_push = false
       }
     }
   }

@@ -1,0 +1,11 @@
+name: Deploy app
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: DigitalOcean App Platform deployment
+        uses: digitalocean/app_action@main
+        with:
+          app_name: markdown-server
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
