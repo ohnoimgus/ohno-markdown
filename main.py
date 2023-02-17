@@ -17,7 +17,7 @@ async def serve_document(file_name):
         return await get_file(file_name)
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail='Whops!', headers={
-                            'content-type': 'application/text'})
+                            'Content-Type': 'text/html'})
 
 
 @cached(cache=Cache.MEMORY)
